@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Boutique LEGO® (non-)officielle FR </title>
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/most-sell.css">
+  <link rel="stylesheet" href="styles/promo.css">
+  <link rel="stylesheet" href="styles/categories.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header style="width: 100%;">
+    <div class="navbar">
+      <img src="public/lego-logo.png" alt="LEGO® logo" class="logo">
+
+      <div class="nav-links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+      </div>
+    </div>
+
+    <div class="header">
+      <img src="./public/lego-human-left.png" alt="LEGO® logo" class="left">
+
+      <div class="header-content">
+        <h1>À vos briques</h1>
+        <p>libérez votre imagination</p>
+      </div>
+
+      <img src="./public/lego-human-right.png" alt="LEGO® logo" class="right">
+    </div>
+  </header>
+
+  <div id="most-sell">
+    <div id="title">
+      <h2>Vous pourriez aimer</h2>
+      <p>Basées sur nos produits les plus commandés et les plus appréciés</p>
+    </div>
+
+    <div id="items">
+      <lego-item-card
+        image="./public/items/2.png"
+        price="29.99€"
+        name="L&apos;orchidée miniature"
+        age="18+"
+        bricks="274"
+      ></lego-item-card>
+
+      <lego-item-card
+        image="./public/items/0.png"
+        price="629.99€"
+        name="La tour Eiffel"
+        age="18+"
+        bricks="10 001"
+      ></lego-item-card>
+      
+      <lego-item-card
+        image="./public/items/1.png"
+        price="199.99€"
+        name="La Moto Ducati Panigale V4 S"
+        age="18+"
+        bricks="1 603"
+      ></lego-item-card>
+      
+      <lego-item-card
+        image="./public/items/3.png"
+        price="14.99€"
+        name="Les amoureux"
+        age="9+"
+        bricks="287"
+      ></lego-item-card>
+      
+      <lego-item-card
+        image="./public/items/4.png"
+        price="69.99€"
+        name="Le chasseur ARC-170"
+        age="9+"
+        bricks="497"
+      ></lego-item-card>
+      
+      <lego-item-card
+        image="./public/items/5.png"
+        price="49.99€"
+        name="La balade en moto de Hagrid™ et Harry"
+        age="9+"
+        bricks="617"
+      ></lego-item-card>
+      
+      <lego-item-card
+        image="./public/items/6.png"
+        price="79.99€"
+        name="LOVE"
+        age="18+"
+        bricks="791"
+      ></lego-item-card>
+    </div>
+  </div>
+
+  <section id="valentine">
+    <img src="./public/promo/valentine.png" alt="Promotion Saint-Valentin" class="promo-image">
+    
+    <div class="promo-content">
+      <h2>Offrez-lui un cadeau inoubliable</h2>
+      <p>À l&apos;occasion de la Saint-Valentin, profitez de nos offres spéciales sur une sélection de produits</p>
+    </div>
+  </section>
+
+  <section id="categories">
+    <lego-item-category
+      image="0"
+      label="Nouveautées"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="1"
+      label="Exclusivitées"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="2"
+      label="Offres"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="3"
+      label="Tout les jouets"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="4"
+      label="18 ans et plus"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="5"
+      label="Rechercher par prix"
+    ></lego-item-category>
+
+    <lego-item-category
+      image="6"
+      label="Saint-Valentin"
+    ></lego-item-category>
+  </section>
+
+  <footer>
+    <div class="rows">
+      <div id="footer-nav">
+        <img src="public/lego-logo.png" alt="LEGO® logo" class="logo">
+
+        <div id="langSelector">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
+          <span>France</span>
+        </div>
+
+        <a href="#">Cartes-cadeaux</a>
+        <a href="#">Trouve de l&apos;inpiration</a>
+        <a href="#">Catalogues LEGO</a>
+        <a href="#">Trouver un magasin</a>
+      </div>
+
+      <div id="footer-nav">
+        <h3>à propos de nous</h3>
+        <a href="#">A propos du Groupe LEGO</a>
+        <a href="#">Nouveautées LEGO</a>
+        <a href="#">Durabilité</a>
+        <a href="#">Déclaration de transparence de la chaîne d&apos;approvisionnement</a>
+        <a href="#">Certification produit LEGO</a>
+        <a href="#">Emplois chez LEGO</a>
+        <a href="#">LEGO compliance line</a>
+      </div>
+
+      <div id="footer-nav">
+        <h3>Aide</h3>
+        <a href="#">Contacte-nous</a>
+        <a href="#">Instructions de montage</a>
+        <a href="#">Pièces manquantes</a>
+        <a href="#">Expédition et retours</a>
+        <a href="#">Modes de paiement</a>
+        <a href="#">Conditions Générales</a>
+        <a href="#">Rappels de produits</a>
+      </div>
+
+      <div id="footer-nav">
+        <h3>Attractions</h3>
+        <a href="#">LEGO House</a>
+        <a href="#">LEGOLAND Parks</a>
+        <a href="#">LEGOLAND Discovery Centers</a>
+      </div>
+
+      <div id="footer-nav">
+        <h3>Aller plus loin avec LEGO</h3>
+        <a href="#">LEGO® Magazine (GRATUIT)</a>
+        <a href="#">LEGO® Education</a>
+        <a href="#">LEGO® Ideas</a>
+        <a href="#">LEGO® Foundations</a>
+        <a href="#">Offres étudiants</a>
+        <a href="#">Le programme d&apos;Afiliation</a>
+      </div>
+    </div>
+
+    <div id="footer-bottom">
+      <div id="newsletter-socials">
+        <div id="newsletter">
+          <label>S&apos;abonner aux e-mails de marketing numérique</label>
+          <input type="email" placeholder="Ton adresse e-mail">
+        </div>
+
+        <div id="socials">
+          <label>Suivez-nous</label>
+
+          <div class="socials-links">
+            <!-- Facebook -->
+            <a href="#" class="icon">
+              <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0H7.27273C6.0672 0 4.91104 0.447767 4.05861 1.2448C3.20617 2.04183 2.72727 3.12283 2.72727 4.25V6.8H0V10.2H2.72727V17H6.36364V10.2H9.09091L10 6.8H6.36364V4.25C6.36364 4.02457 6.45942 3.80837 6.6299 3.64896C6.80039 3.48955 7.03162 3.4 7.27273 3.4H10V0Z" fill="white"/>
+              </svg>                  
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="#" class="icon">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.0113 0H17.9237L11.5292 7.63838L19 18H13.1373L8.54715 11.7033L3.29224 18H0.379873L7.15428 9.83026L0 0H6.00833L10.1553 5.75203L15.0113 0ZM13.992 16.2066H15.6065L5.15995 1.72694H3.42519L13.992 16.2066Z" fill="white"/>
+              </svg>
+            </a>
+
+            <a href="#" class="icon">
+              <!-- Instagram -->
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8571 1H5.28571C2.91878 1 1 2.91878 1 5.28571V13.8571C1 16.2241 2.91878 18.1429 5.28571 18.1429H13.8571C16.2241 18.1429 18.1429 16.2241 18.1429 13.8571V5.28571C18.1429 2.91878 16.2241 1 13.8571 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.9997 9.03113C13.1055 9.74448 12.9837 10.473 12.6515 11.1131C12.3194 11.7533 11.7939 12.2723 11.1497 12.5966C10.5056 12.9208 9.77556 13.0336 9.06357 12.9191C8.35157 12.8045 7.69383 12.4683 7.1839 11.9584C6.67396 11.4485 6.33781 10.7907 6.22324 10.0787C6.10867 9.36675 6.22152 8.63675 6.54574 7.99259C6.86997 7.34843 7.38905 6.82291 8.02916 6.49076C8.66928 6.15862 9.39782 6.03678 10.1112 6.14256C10.8388 6.25046 11.5125 6.58953 12.0326 7.10968C12.5528 7.62983 12.8918 8.30348 12.9997 9.03113Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.2852 4.85693H14.2937" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Youtube -->
+            <a href="#" class="icon">
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.44908 11.3426C0.850305 8.51686 0.850305 5.59698 1.44908 2.7712C1.52776 2.48424 1.67977 2.2227 1.89018 2.0123C2.10058 1.80189 2.36212 1.64988 2.64908 1.5712C7.24633 0.809598 11.9376 0.809598 16.5348 1.5712C16.8218 1.64988 17.0833 1.80189 17.2937 2.0123C17.5041 2.2227 17.6561 2.48424 17.7348 2.7712C18.3336 5.59698 18.3336 8.51686 17.7348 11.3426C17.6561 11.6296 17.5041 11.8911 17.2937 12.1015C17.0833 12.3119 16.8218 12.464 16.5348 12.5426C11.9376 13.3044 7.24631 13.3044 2.64908 12.5426C2.36212 12.464 2.10058 12.3119 1.89018 12.1015C1.67977 11.8911 1.52776 11.6296 1.44908 11.3426Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.87695 9.62821L12.1627 7.05678L7.87695 4.48535V9.62821Z" fill="#16143E"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p id="footer-legal">
+          LEGO System A/S, DK-7190 Billund, Denmark. Vous devez être âgé(e) d&apos;au moins 18 ans pour faire des achats en ligne. LEGO, le logo LEGO, la Minifigure, DUPLO, le logo FRIENDS, le logo MINIFIGURES, le DREAMZzz, NINJAGO, VIDIYO et MINDSTORMS sont des marques déposées du Groupe LEGO. ©2024 The LEGO Group. Tous droits réservés. L&apos;utilisation de ce site implique que vous acceptez les conditions d&apos;utilisation.
+        </p>
+      </div>   
+    </div>
+  </footer>
+
+  <script src="public/scripts/lego-item-card.js"></script>
+  <script src="public/scripts/lego-category-card.js"></script>
+</body>
+</html>
